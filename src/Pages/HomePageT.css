@@ -1,0 +1,341 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main-div {
+  background-color:  rgb(33,54,56);
+ 
+  width: 100%;
+  height: 609px;
+}
+
+/* /////////////////////////////////// /////////////////// */
+.NavbarSection {
+  /* background: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 25%;
+}
+
+.logoSection {
+  /* background: wheat; */
+  height: 100%;
+  width: 20%;
+
+  margin-left: 5%;
+
+  display: flex;
+  align-items: end;
+
+  font-size: 2.7rem;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #d5d5d5;
+}
+.logoSection img{
+  width: 300px;
+  height: 100px;
+border-radius: 10px;
+border: 10px solid #292E5E ;
+}
+.buttonSection {
+  /* background: wheat; */
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-right: 5%;
+}
+.buttonSection button{
+    padding: 15px;
+    background-color: #026ce8;
+    margin: 10px;
+    border-radius: 60px ;
+    color: white;
+    font-size: large;
+}
+.buttonSection button:first-child {
+  padding: 15px 30px 15px 30px;
+}
+
+/* //////////////////////////////////// ///////////////////// */
+.manu-button {
+  /* background: red; */
+  padding-left: 5.4%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 19.5%;
+}
+.manu-button button {
+  padding: 7px 0px;
+  width: 130px;
+  height: fit-content;
+  border-radius: 60px;
+  background-color: rgb(33,54,56);
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.manu-button button:hover {
+  background: rgb(225,225,225);
+  border: 1px solid #ffffff;
+  color: black;
+}
+
+/* //////////////////////////////// //////////////// */
+.paragraph {
+  /* background: red; */
+  margin-left: 5%;
+  margin-top: -5px;
+  height: fit-content;
+
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+/* /////////////////////////////     ////////////////////////////////// */
+.Fly-form {
+  /* background: red; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  padding-left: 5%;
+  padding-right: 10%;
+}
+
+.Fly-form .formSection {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-top: 15px;
+  padding-bottom: 20px;
+  width: 250px;
+}
+
+.Fly-form .formSection label,
+.Fly-form .formSection input {
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+.Fly-form .formSection:first-child {
+  width: 220px !important;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.Fly-form .formSection:first-child label,
+.Fly-form .formSection:first-child select {
+  margin-left: 30%;
+  border: none;
+}
+
+.formSection select {
+  border: none;
+}
+
+.Fly-form .formSection select option:first-child {
+  font-size: 15px;
+  font-weight: 500;
+  color: thistle;
+}
+
+.Fly-form .formSection:nth-child(5) {
+  width: 220px !important;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.formSection label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.formSection input {
+  border: none;
+  margin-top: 3px;
+}
+
+.formSection input::placeholder {
+  font-size: 15px;
+  font-weight: 500;
+  color: thistle;
+}
+
+.formSection input:focus {
+  border: none;
+}
+
+.Fly-form button {
+  background: #026ce8;
+  border: none;
+  padding: 12px 25px 12px 25px;
+
+  color: white;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* //////////////////////////////////       ////////////////////////////////// */
+.firstSection-checkBox {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* background: red; */
+  color: white;
+
+  margin-top: 2%;
+}
+.firstSection-checkBox input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  border: 2px solid #cfe0d0;
+  border-radius: 2px;
+  cursor: pointer;
+
+  margin-left: 5%;
+  height: 18px;
+  width: 18px;
+  background-color: #213638;
+}
+
+/* Style the checkbox when checked */
+.firstSection-checkBox input[type="checkbox"]:checked {
+  background-color: #213638;
+  border-color: #cfe0d0;
+  position: relative;
+}
+
+/* Add a checkmark when the checkbox is checked */
+.firstSection-checkBox input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  left: 2px;
+}
+
+.firstSection-checkBox p {
+  margin-left: 5px;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* ///////////////////////////    //////////////////////////         */
+
+.secondSection-checkBox {
+  display: flex;
+
+  justify-content: start;
+  align-items: center;
+  /* background: red; */
+  color: white;
+  margin-top: 50px;
+}
+
+.secondSection-checkBox input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  border: 2px solid #cfe0d0;
+  border-radius: 2px;
+  cursor: pointer;
+
+  margin-left: 5%;
+  height: 18px;
+  width: 18px;
+  background-color: #213638;
+}
+
+/* Style the checkbox when checked */
+.secondSection-checkBox input[type="checkbox"]:checked {
+  background-color: #213638;
+  border-color: #cfe0d0;
+  position: relative;
+}
+
+/* Add a checkmark when the checkbox is checked */
+.secondSection-checkBox input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  left: 2px;
+}
+
+.secondSection-checkBox p {
+  margin-left: 5px;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+/* /////////////////////////////////////   ////////////////////////////  */
+
+.ExperienceSection {
+  padding-bottom: 50px;
+}
+
+.ExperienceSection .experianceTag {
+  /* background: red; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px 0;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.swiper {
+  width: 75%;
+  height: 75%;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* background: red; */
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
