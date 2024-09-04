@@ -1,83 +1,151 @@
 .container-div {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.login-page {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heading p {
+  font-size: xx-large;
+  margin-bottom: 20px;
+}
+
+.double-input input {
+  width: 260px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 20px;
+}
+
+.input input {
+  width: 55%;
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.login-button button {
+  width: auto;
+  padding: 10px;
+  margin-top: 30px;
+  background-color: #213638;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: large;
+}
+
+.login-button button:hover {
+  background-color: #0056b3;
+}
+
+.paragraph p {
+  margin-top: 100px;
+  font-size: 14px;
+  color: black;
+  margin-right: 60px;
+}
+
+.paragraph a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.bg-color {
+  width: 30%;
+  height: 100%;
+  background-color: #213638;
+  display: flex;
+  align-items: center;
+}
+
+.bg-color img {
+  max-width: 100%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .container-div {
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
   }
-  
+
   .login-page {
-    width: 60%;
-    /* padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: white; */
-    display: flex;
-    flex-direction: column;
+    width: 90%;
+  }
+
+  .double-input input, 
+  .input input {
+    width: 90%;
+  }
+
+  .paragraph p {
+    margin-top: 50px;
+    margin-right: 0;
+  }
+
+  .bg-color {
+    width: 100%;
+    height: 30%;
     justify-content: center;
-    align-items: center;
+  }
+
+  .bg-color img {
+    max-height: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-div {
+    flex-direction: column;
+  }
+
+  .login-page {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .heading p {
+    font-size: 1.5rem;
+  }
+
+  .double-input input,
+  .input input {
+    width: 100%;
+  }
+
+  .paragraph p {
+    margin-top: 30px;
+    font-size: 12px;
     text-align: center;
   }
-  
-  .heading p {
-    font-size: 30px;
-    font-size:xx-large;
-    margin-bottom: 20px;
-  }
-  .double-input input{
-    width: 210px;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 4px;
-    margin: 20px;
-  }
-  .input input {
-    width: 55%;
-    padding: 10px;
-    margin: 20px 0;
-    border: 1px solid black;
-    border-radius: 4px;
-    
-  }
-  
-  .login-button button {
-    width: auto;
-    padding: 10px;
-    margin-top: 30px;
-    background-color: #213638;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: large;
-  }
-  
-  .login-button button:hover {
-    background-color: #0056b3;
-  }
-  
-  .paragraph p {
-    margin-top: 100px;
-    font-size: 14px;
-    color:black;
-    margin-right: 60px;
-  }
-  
-  .paragraph a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
+
   .bg-color {
-    width: 30%;
-    height: 100%;
-    background-color: #213638;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
+    width: 100%;
+    height: 30vh;
+    justify-content: center;
   }
-  
+
   .bg-color img {
-    max-width: 100%;
-    max-height: 80%;
-    object-fit: contain;
+    max-height: 50%;
   }
-  
+
+  .login-button button {
+    width: 100%;
+  }
+}

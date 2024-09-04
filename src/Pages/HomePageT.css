@@ -1,3 +1,4 @@
+/* General styles for all screen sizes */
 html,
 body {
   height: 100%;
@@ -6,82 +7,63 @@ body {
 }
 
 .main-div {
-  background-color:  rgb(33,54,56);
- 
+  background-color: rgb(33, 54, 56);
   width: 100%;
-  height: 609px;
+  height: 550px;
 }
 
-/* /////////////////////////////////// /////////////////// */
 .NavbarSection {
-  /* background: red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   height: 25%;
 }
 
-.logoSection {
-  /* background: wheat; */
-  height: 100%;
-  width: 20%;
-
+.handingSection {
+  margin-top: 30px;
   margin-left: 5%;
-
-  display: flex;
-  align-items: end;
-
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+  font-style: italic;
   color: #d5d5d5;
 }
-.logoSection img{
-  width: 300px;
-  height: 100px;
-border-radius: 10px;
-border: 10px solid #292E5E ;
-}
-.buttonSection {
-  /* background: wheat; */
-  height: 100%;
 
+.buttonSection {
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin-right: 5%;
 }
-.buttonSection button{
-    padding: 15px;
-    background-color: #026ce8;
-    margin: 10px;
-    border-radius: 60px ;
-    color: white;
-    font-size: large;
-}
-.buttonSection button:first-child {
-  padding: 15px 30px 15px 30px;
+
+.buttonSection button {
+  padding: 15px;
+  background-color: #026ce8;
+  margin: 10px;
+  border-radius: 60px;
+  color: white;
+  font-size: large;
 }
 
-/* //////////////////////////////////// ///////////////////// */
+.buttonSection button:first-child {
+  padding: 15px 30px;
+}
+
 .manu-button {
-  /* background: red; */
   padding-left: 5.4%;
   display: flex;
   align-items: center;
   gap: 10px;
   height: 19.5%;
 }
+
 .manu-button button {
   padding: 7px 0px;
   width: 130px;
   height: fit-content;
   border-radius: 60px;
-  background-color: rgb(33,54,56);
+  background-color: rgb(33, 54, 56);
   font-size: 20px;
   font-weight: 500;
   color: white;
@@ -90,32 +72,26 @@ border: 10px solid #292E5E ;
 }
 
 .manu-button button:hover {
-  background: rgb(225,225,225);
+  background: rgb(225, 225, 225);
   border: 1px solid #ffffff;
   color: black;
 }
 
-/* //////////////////////////////// //////////////// */
 .paragraph {
-  /* background: red; */
   margin-left: 5%;
   margin-top: -5px;
   height: fit-content;
-
   color: white;
   font-size: 30px;
   font-weight: 500;
 }
 
-/* /////////////////////////////     ////////////////////////////////// */
 .Fly-form {
-  /* background: red; */
   display: flex;
   justify-content: start;
   align-items: center;
   flex-wrap: wrap;
   gap: 15px;
-
   padding-left: 5%;
   padding-right: 10%;
 }
@@ -125,7 +101,6 @@ border: 10px solid #292E5E ;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   padding-top: 15px;
   padding-bottom: 20px;
   width: 250px;
@@ -143,174 +118,95 @@ border: 10px solid #292E5E ;
   border-bottom-left-radius: 10px;
 }
 
-.Fly-form .formSection:first-child label,
-.Fly-form .formSection:first-child select {
-  margin-left: 30%;
-  border: none;
-}
-
-.formSection select {
-  border: none;
-}
-
-.Fly-form .formSection select option:first-child {
-  font-size: 15px;
-  font-weight: 500;
-  color: thistle;
-}
-
 .Fly-form .formSection:nth-child(5) {
   width: 220px !important;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-.formSection label {
-  font-size: 15px;
-  font-weight: 500;
-}
-
-.formSection input {
-  border: none;
-  margin-top: 3px;
-}
-
-.formSection input::placeholder {
-  font-size: 15px;
-  font-weight: 500;
-  color: thistle;
-}
-
-.formSection input:focus {
-  border: none;
-}
-
 .Fly-form button {
   background: #026ce8;
   border: none;
-  padding: 12px 25px 12px 25px;
-
+  padding: 12px 25px;
   color: white;
   border-radius: 30px;
   font-size: 18px;
   font-weight: 400;
 }
 
-/* //////////////////////////////////       ////////////////////////////////// */
-.firstSection-checkBox {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  /* background: red; */
-  color: white;
-
-  margin-top: 2%;
-}
-.firstSection-checkBox input[type="checkbox"] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-
-  border: 2px solid #cfe0d0;
-  border-radius: 2px;
-  cursor: pointer;
-
-  margin-left: 5%;
-  height: 18px;
-  width: 18px;
-  background-color: #213638;
-}
-
-/* Style the checkbox when checked */
-.firstSection-checkBox input[type="checkbox"]:checked {
-  background-color: #213638;
-  border-color: #cfe0d0;
-  position: relative;
-}
-
-/* Add a checkmark when the checkbox is checked */
-.firstSection-checkBox input[type="checkbox"]:checked::after {
-  content: "✔";
-  color: white;
-  font-size: 10px;
-  position: absolute;
-  top: 0;
-  left: 2px;
-}
-
-.firstSection-checkBox p {
-  margin-left: 5px;
-
-  font-size: 13px;
-  font-weight: 500;
-}
-
-/* ///////////////////////////    //////////////////////////         */
-
+.firstSection-checkBox,
 .secondSection-checkBox {
   display: flex;
-
   justify-content: start;
   align-items: center;
-  /* background: red; */
   color: white;
-  margin-top: 50px;
+  margin-top: 2%;
 }
 
+.firstSection-checkBox input[type="checkbox"],
 .secondSection-checkBox input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-
   border: 2px solid #cfe0d0;
   border-radius: 2px;
   cursor: pointer;
-
   margin-left: 5%;
   height: 18px;
   width: 18px;
   background-color: #213638;
 }
 
-/* Style the checkbox when checked */
-.secondSection-checkBox input[type="checkbox"]:checked {
-  background-color: #213638;
-  border-color: #cfe0d0;
-  position: relative;
-}
-
-/* Add a checkmark when the checkbox is checked */
-.secondSection-checkBox input[type="checkbox"]:checked::after {
-  content: "✔";
-  color: white;
-  font-size: 10px;
-  position: absolute;
-  top: 0;
-  left: 2px;
-}
-
+.firstSection-checkBox p,
 .secondSection-checkBox p {
   margin-left: 5px;
-
   font-size: 13px;
   font-weight: 500;
 }
-/* /////////////////////////////////////   ////////////////////////////  */
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #149e46;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  width: 100px;
+  height: 100px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.whatsapp-button a:hover {
+  background-color: #128c7e;
+  transform: scale(1.1);
+}
+
+.whatsapp-button img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+}
 
 .ExperienceSection {
   padding-bottom: 50px;
 }
 
-.ExperienceSection .experianceTag {
-  /* background: red; */
-
+.experienceTag {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  padding: 20px 0;
-  font-size: 40px;
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
+  margin-top: 40px;
 }
 
 .swiper {
@@ -318,16 +214,13 @@ border: 10px solid #292E5E ;
   height: 75%;
   margin-left: auto;
   margin-right: auto;
-
-  /* background: red; */
+  margin-top: 60px;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
-
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -339,3 +232,223 @@ border: 10px solid #292E5E ;
   height: 100%;
   object-fit: cover;
 }
+@media (max-width: 550px) {
+  /* General Styles */
+  html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .main-div {
+    height: auto; /* Allow the height to adjust based on content */
+  }
+
+  /* Navbar Section */
+  .NavbarSection {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+
+  /* Handing Section */
+  .handingSection {
+    font-size: 1.5rem;
+    margin-left: 2%;
+    margin-top: 10px;
+  }
+
+  /* Button Section */
+  .buttonSection {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .buttonSection button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 5px 0;
+  }
+
+  /* Manu-button Section */
+  .manu-button {
+    padding-left: 2%;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+  }
+
+  .manu-button button {
+    width: 50%;
+    font-size: 0.9rem;
+  }
+
+  /* Paragraph */
+  .paragraph {
+    font-size: 1.2rem;
+    margin-left: 2%;
+  }
+
+  /* Fly-form Section */
+  .Fly-form {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 80%;
+  }
+
+  .Fly-form .formSection {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .Fly-form .formSection:first-child,
+  .Fly-form .formSection:nth-child(5) {
+    border-radius: 10px;
+  }
+
+  .Fly-form button {
+    width: 50%;
+    padding: 12px;
+    margin-left: 120px;
+  }
+
+  /* Checkbox Sections */
+  .firstSection-checkBox{
+    gap: 10px;
+  }
+  .firstSection-checkBox,
+  .secondSection-checkBox {
+    /* flex-direction: column; */
+    align-items: flex-start;
+    width: 100%;
+    margin: 20px;
+  }
+
+  .firstSection-checkBox input[type="checkbox"],
+  .secondSection-checkBox input[type="checkbox"] {
+    margin-left: 0;
+  }
+
+  /* WhatsApp Button */
+  .whatsapp-button a {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+
+  .whatsapp-button img {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* Experience Section */
+  .experienceTag {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  /* Swiper */
+  .swiper {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .swiper-slide img {
+    height: auto;
+  }
+}
+ /* Responsive styles for different screen sizes */
+ @media (max-width: 1200px) {
+  .handingSection {
+    font-size: 2rem;
+  }
+
+  .buttonSection button {
+    font-size: medium;
+    padding: 10px 20px;
+  }
+
+  .Fly-form .formSection {
+    width: 200px;
+  }
+
+  .swiper {
+    width: 80%;
+  }
+}
+/*  */
+@media (max-width: 768px) {
+  .handingSection {
+    font-size: 1.8rem;
+  }
+
+  .buttonSection {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 0;
+  }
+
+  .buttonSection button {
+    width: 100%;
+    margin-right: 0;
+    font-size: medium;
+    padding: 10px 20px;
+  }
+
+  .manu-button {
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+
+  .manu-button button {
+    width: 100%;
+  }
+
+  .Fly-form {
+    flex-direction: column;
+    align-items: stretch;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .Fly-form .formSection {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .whatsapp-button {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .whatsapp-button a {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+  }
+
+  .whatsapp-button img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .swiper {
+    width: 100%;
+    height: auto;
+  }
+}
+  
+
+
+
+

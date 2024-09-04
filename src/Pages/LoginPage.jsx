@@ -6,8 +6,21 @@ const LoginPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
+  const handleUsernameChange = (e) => {
+    setUsername(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); 
+    handleLogin();
+  };
+
   const handleLogin = () => {
-    // Here you can handle the login logic, such as sending the data to an API.
+    // Handle the login logic here, such as sending the data to an API.
     console.log('Username:', username);
     console.log('Password:', password);
   };
@@ -23,17 +36,17 @@ const LoginPage = () => {
             type="text"
             placeholder="Username"
             value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            onChange={handleUsernameChange}
           />
           <input
             type="password"
             placeholder="Password"
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={handlePasswordChange}
           />
         </div>
         <div className='login-button2'>
-          <button onClick={handleLogin}>Login</button>
+          <button onClick={handleSubmit}>Login</button>
         </div>
         <div className='paragraph'>
           <p>Don’t have an Account? No worries <span><a href=".">Create Account</a></span></p>

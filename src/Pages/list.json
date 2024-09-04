@@ -1,74 +1,38 @@
 [
     {
-        "image":"../assets/Ticketing for all major airline.jpeg",
-        "handing":"Ticketing for all major Airline"
+        "image": "assets/Ticketing for all major airline.jpeg",
+        "handing": "Ticketing for all major Airline"
     },
     {
-        "image":"../assets/Airline Resersation.jpeg",
-        "handing":"Airline Reseravtion"
+        "image": "assets/Airline Resersation.jpeg",
+        "handing": "Airline Reservation"
     },
     {
-        "image":"../assets/Hotal Reservation.jpeg",
-        "handing":"Hotel Reservation"
+        "image": "assets/Hotal Reservation.jpeg",
+        "handing": "Hotel Reservation"
     },
     {
-        "image":"../assets/Tourism and Car Rentals.jpeg",
-        "handing":"Tourism and Car Rentals"
+        "image": "assets/Tourism and Car Rentals.jpeg",
+        "handing": "Tourism and Car Rentals"
     },
     {
-        "image":"../assets/Visa assistance.jpeg",
-        "handing":"Visa Assistance"
+        "image": "assets/Visa assistance.jpeg",
+        "handing": "Visa Assistance"
     },
     {
-        "image":"../assets/Travel insurance.jpeg",
-        "handing":"Travel Insurance"
+        "image": "assets/Travel insurance.jpeg",
+        "handing": "Travel Insurance"
     },
     {
-        "image":"../assets/Ticket delivery.jpeg",
-        "handing":"Ticket Delivery at Doorstep"
+        "image": "assets/Ticket delivery.jpeg",
+        "handing": "Ticket Delivery at Doorstep"
     },
     {
-        "image":"../assets/24_hours services.jpeg",
-        "handing":"24_Hours Services"
+        "image": "assets/24_hours services.jpeg",
+        "handing": "24 Hours Services"
     },
     {
-        "image":"../assets/VIsa card.jpeg",
-        "handing":"Visa Card"
-    },
-    {
-        "image":"../assets/Ticketing for all major airline.jpeg",
-        "handing":"Ticketing for all major Airline"
-    },
-    {
-        "image":"../assets/Airline Resersation.jpeg",
-        "handing":"Airline Reseravtion"
-    },
-    {
-        "image":"../assets/Hotal Reservation.jpeg",
-        "handing":"Hotel Reservation"
-    },
-    {
-        "image":"../assets/Tourism and Car Rentals.jpeg",
-        "handing":"Tourism and Car Rentals"
-    },
-    {
-        "image":"../assets/Visa assistance.jpeg",
-        "handing":"Visa Assistance"
-    },
-    {
-        "image":"../assets/Travel insurance.jpeg",
-        "handing":"Travel Insurance"
-    },
-    {
-        "image":"../assets/Ticket delivery.jpeg",
-        "handing":"Ticket Delivery at Doorstep"
-    },
-    {
-        "image":"../assets/24_hours services.jpeg",
-        "handing":"24_Hours Services"
-    },
-    {
-        "image":"../assets/VIsa card.jpeg",
-        "handing":"Visa Card"
+        "image": "assets/VIsa card.jpeg",
+        "handing": "Visa Card"
     }
 ]
