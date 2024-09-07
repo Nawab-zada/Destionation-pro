@@ -7,7 +7,7 @@ import image2 from "../assets/TRAVAL_IMAGE4.jpg";
 import image3 from "../assets/TRAVAL_IMAGE3.jpg";
 import image4 from "../assets/TRAVAL_IMAGE1.jpg";
 import whatsapp from '../assets/whatsapp-img.jpeg'; 
-
+import Navbar from './Navbar';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -67,23 +67,10 @@ const HomePage = () => {
 
   return (
     <>
+  
+
       <div className="main-div">
-        <div className="NavbarSection">
-          <div className="handingSection">
-            <p>Destination <br />Travel & Tours</p>
-          </div>
-          <div className="buttonSection">
-           <Link to="/"> <button>Login</button></Link>
-          <Link to="/signup"><button>Create account</button></Link>
-          </div>
-        </div>
-        <div className="manu-button">
-        <Link to="/home"><button >Home</button></Link>
-        <Link ><button>Airline</button></Link>
-         <Link to=""><button>About Us</button></Link>
-         <Link to="/services" ><button>Services</button></Link>
-        <Link to="/contact"><button>Contact</button></Link>
-        </div>
+       
         <p className="paragraph">
           Delivering World-Class Travel Experiences Since 1973.
         </p>
@@ -144,11 +131,9 @@ const HomePage = () => {
           <input type="checkbox" />
           <p>Add Nearby Airports</p>
         </div>
-        <div className="secondSection-checkBox">
-          <input type="checkbox" />
-          <p>Show direct flight only.</p>
-        </div>
+        
       </div>
+     
       <div className="whatsapp-button">
         <a
           href="https://wa.me/923456301298"
@@ -158,6 +143,7 @@ const HomePage = () => {
           <img src={whatsapp} alt="WhatsApp" />
         </a>
       </div>
+
       <div className="ExperienceSection">
         <div className="experienceTag">Experience</div>
         <Swiper

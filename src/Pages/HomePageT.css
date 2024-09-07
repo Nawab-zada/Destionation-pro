@@ -9,20 +9,25 @@ body {
 .main-div {
   background-color: rgb(33, 54, 56);
   width: 100%;
-  height: 550px;
+  height: 310px;
 }
-
+.divtop{
+  background-color: rgb(33, 54, 56);
+  width: 100%;
+  height: 310px;
+}
 .NavbarSection {
+  background-color: rgb(33, 54, 56);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 25%;
+  height: 30%;
 }
 
 .handingSection {
   margin-top: 30px;
   margin-left: 5%;
-  font-size: 2.5rem;
+  font-size: 1rem;
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
   font-style: italic;
@@ -30,7 +35,9 @@ body {
 }
 
 .buttonSection {
-  height: 100%;
+  
+  height: 90%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,20 +45,26 @@ body {
 }
 
 .buttonSection button {
-  padding: 15px;
-  background-color: #026ce8;
+  padding: 0px;
+  background-color: none;
   margin: 10px;
   border-radius: 60px;
   color: white;
-  font-size: large;
+  font-size: 13px;
+  width: 90px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  
 }
 
 .buttonSection button:first-child {
-  padding: 15px 30px;
+  padding: 7px 6px;
 }
 
 .manu-button {
+  background-color: rgb(33, 54, 56);
   padding-left: 5.4%;
+  padding-bottom: 1%;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -59,12 +72,11 @@ body {
 }
 
 .manu-button button {
-  padding: 7px 0px;
-  width: 130px;
+  padding: 7px 6px;
+  width: 90px;
   height: fit-content;
   border-radius: 60px;
-  background-color: rgb(33, 54, 56);
-  font-size: 20px;
+  font-size: 13px;
   font-weight: 500;
   color: white;
   border: 1px solid #ffffff;
@@ -79,11 +91,12 @@ body {
 
 .paragraph {
   margin-left: 5%;
-  margin-top: -5px;
+  margin-top: 0px;
   height: fit-content;
   color: white;
   font-size: 30px;
   font-weight: 500;
+  background-color: rgb(33, 54, 56);
 }
 
 .Fly-form {
@@ -94,6 +107,7 @@ body {
   gap: 15px;
   padding-left: 5%;
   padding-right: 10%;
+  padding-top: 2%;
 }
 
 .Fly-form .formSection {
@@ -101,28 +115,39 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 15px;
+  padding-top: 5px;
   padding-bottom: 20px;
-  width: 250px;
+  width: 200px;
+
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .Fly-form .formSection label,
 .Fly-form .formSection input {
   margin-left: 5%;
   margin-right: 10%;
+
 }
 
 .Fly-form .formSection:first-child {
   width: 220px !important;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-}
-
-.Fly-form .formSection:nth-child(5) {
-  width: 220px !important;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+.Fly-form .formSection:nth-child(5) {
+  width: 220px !important;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
 
 .Fly-form button {
   background: #026ce8;
@@ -314,7 +339,7 @@ body {
   }
 
   .Fly-form button {
-    width: 50%;
+    width: 40%;
     padding: 12px;
     margin-left: 120px;
   }
