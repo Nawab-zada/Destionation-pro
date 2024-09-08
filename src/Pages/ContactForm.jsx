@@ -21,28 +21,30 @@ const ContactForm = () => {
     }
 
     const handlesubmit = async (e) => {
-        e.preventDefault()
+        e.preventDefault();
         const { firstname, lastname, phonenumber, email, comments } = formData;
+    
         if (!firstname || !lastname || !phonenumber || !email || !comments) {
-            alert("All fields Required")
+            alert("All fields are required");
             return;
         }
+    
         try {
-            // const resp = await axios.post('url', formData)
-            // const data = await resp.data
-            // console.log(data)
-            alert("Email send Successfully")
+            const resp = await axios.post('http://localhost:5000/api/contact', formData);
+            alert("Email sent successfully");
             setFormData({
                 firstname: '',
                 lastname: '',
                 phonenumber: '',
                 email: '',
                 comments: ''
-            })
+            });
         } catch (error) {
-            console.log(error)
+            console.log(error);
+            alert("Failed to send email");
         }
-    }
+    };
+    
     
     console.log(formData)
     return (
