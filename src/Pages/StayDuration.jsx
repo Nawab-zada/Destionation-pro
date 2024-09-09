@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import './UmrahServicePage.css'
 function StayDuration({ nextStep, prevStep, formData, setFormData }) {
   const [showSecondEntry, setShowSecondEntry] = useState(false);
   const [showThirdEntry, setShowThirdEntry] = useState(false);
