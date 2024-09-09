@@ -20,7 +20,8 @@ const Navbar = () => {
         <Link ><button>Airline</button></Link>
          <Link to=""><button>About Us</button></Link>
          <Link to="/services" ><button>Services</button></Link>
-        <Link to="/contact"><button>Contact</button></Link>
+         <Link to="/umrah" ><button>Umrah Packages</button></Link>
+        <Link to="/contact"><button>Contact Us</button></Link>
         </div>
     </div>
   );

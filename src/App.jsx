@@ -10,6 +10,8 @@ import HomePageT from './Pages/HomePageT';
 import LoginPage from './Pages/LoginPage';
 import SignUp from './Pages/SignUp';
 import Navbar from './Pages/Navbar';
+import UmrahService from './Pages/UmrahServicePage';
+import MultiStepForm from './Pages/MultiStepForm';
 function App() {
   const [count, setCount] = useState(0);
 
@@ -23,9 +25,9 @@ function App() {
         <Route path="/home" element={<HomePageT />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="/footer" element={<Footer />} />
+        <Route path="/umrah" element={<UmrahService  />} />
         <Route path="/experiences" element={<Experiences />} />
-
+        <Route path="/services/form" element={<MultiStepForm />} />
       </Routes>
       <Footer />
     </BrowserRouter>

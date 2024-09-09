@@ -7,7 +7,7 @@ import image2 from "../assets/TRAVAL_IMAGE4.jpg";
 import image3 from "../assets/TRAVAL_IMAGE3.jpg";
 import image4 from "../assets/TRAVAL_IMAGE1.jpg";
 import whatsapp from '../assets/whatsapp-img.jpeg'; 
-import Navbar from './Navbar';
+import axios from "axios";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -21,20 +21,14 @@ import { Pagination, Navigation } from "swiper/modules";
 
 const HomePage = () => {
   const [flightData, setFlightData] = useState({
-    from: '',
-    to: '',
+    fromLoca: '',
+    toLoca: '',
     depart: '',
     return: '',
     cabin: '',
   });
 
-  const handlechange = (e) => {
-    const { name, value } = e.target;
-    setFlightData({
-      ...flightData,
-      [name]: value
-    });
-  };
+
 
   const form = useRef();
 
@@ -45,25 +39,34 @@ const HomePage = () => {
     image1, image2, image3, image4,
   ];
 
-  const handleSubmit = (e) => {
+  const handlechange = (e) => {
+    const { name, value } = e.target;
+    setFlightData({
+      ...flightData,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "your_service_id",
-        "your_template_id", 
-        form.current,
-        "your_public_key"  
-      )
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
-  };
+    try {
+        // Sending data to the backend
+        const response = await axios.post('http://localhost:5000/api/send-query', {
+            fromLoca: flightData.fromLoca, // sending data matching the backend structure
+            toLoca: flightData.toLoca,
+            departure: flightData.departure,
+            return: flightData.return,  // Ensure 'return' is not a reserved word in your backend
+            cabin: flightData.cabin,
+            contact: flightData.contact
+        });
+        alert("Flight query sent successfully!");
+    } catch (error) {
+        console.error("There was an error sending the flight query!", error);
+        alert("Error sending query, please try again later.");
+    }
+};
+
 
   return (
     <>
@@ -74,10 +77,10 @@ const HomePage = () => {
         <p className="paragraph">
           Delivering World-Class Travel Experiences Since 1973.
         </p>
-        <form className="Fly-form" ref={form} onSubmit={handleSubmit}>
+        <form className="Fly-form" onSubmit={handleSubmit}>
           <div className="formSection">
             <label htmlFor="from">From</label>
-            <select onChange={handlechange} value={flightData.from} name="from">
+            <select onChange={handlechange} value={flightData.fromLoca} name="fromLoca">
               <option value="">Country, City, Airport</option>
               <option value="new_york">New York</option>
               <option value="london">London</option>
@@ -87,7 +90,7 @@ const HomePage = () => {
           </div>
           <div className="formSection">
             <label htmlFor="to">To</label>
-            <select onChange={handlechange} value={flightData.to} name="to">
+            <select onChange={handlechange} value={flightData.toLoca} name="toLoca">
               <option value="">Country, City, Airport</option>
               <option value="new_york">New York</option>
               <option value="london">London</option>
@@ -98,7 +101,7 @@ const HomePage = () => {
           <div className="formSection">
             <label htmlFor="departure">Departure</label>
             <input
-              onChange={handlechange} value={flightData.depart}
+              onChange={handlechange} value={flightData.departure}
               type="date"
               name="departure"
               placeholder="ADD date"
@@ -114,7 +117,7 @@ const HomePage = () => {
             />
           </div>
           <div className="formSection">
-            <label htmlFor="travelers">Travelers & Cabin Class</label>
+            <label htmlFor="cabin">Travelers & Cabin Class</label>
             <select onChange={handlechange} value={flightData.cabin} name="cabin">
               <option value="">1 Adult, Economy</option>
               <option value="economy">Economy</option>
@@ -123,6 +126,19 @@ const HomePage = () => {
               <option value="standard">Standard</option>
             </select>
           </div>
+          
+          {/* New Contact Info Field */}
+          <div className="formSection">
+            <label htmlFor="contact">Contact (Email/Phone)</label>
+            <input
+              onChange={handlechange} value={flightData.contact}
+              type="text"
+              name="contact"
+              placeholder="Your Email or Phone Number"
+              required
+            />
+          </div>
+
           <button type="submit">Send Query</button>
         </form>
         <div className="firstSection-checkBox">
@@ -133,6 +149,8 @@ const HomePage = () => {
         </div>
         
       </div>
+     
+
      
       <div className="whatsapp-button">
         <a
