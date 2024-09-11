@@ -1,4 +1,4 @@
-.container-div {
+/* .container-div {
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -142,5 +142,122 @@
 
   .login-button2 button {
     width: 100%;
+  }
+} */
+/* Modal Overlay with Transparent Background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Close Button (Cross) */
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close-modal:hover {
+  color: #ff0000; /* Red color on hover */
+}
+
+/* Blurred, mirror-like effect for the modal background */
+.login-modal {
+  position: relative;
+  backdrop-filter: blur(10px); /* Creates the transparent blur effect */
+  background: rgba(255, 255, 255, 0.3); /* Light transparent background */
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  width: 320px;
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Login page inside modal */
+.login-page {
+  width: 100%;
+  text-align: center;
+}
+
+/* Heading */
+.heading p {
+  font-size: 1.8rem;
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.input-login input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Rounded login button */
+.login-button2 button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.login-button2 button:hover {
+  background-color: #004080;
+}
+
+/* Remove the green block entirely */
+.para {
+  margin-top: 5px; /* Adjust margin */
+  font-size: 14px;
+  color: black;
+  text-align: center;
+  background-color: transparent; /* Ensure no background is present */
+  padding: 0; /* Remove padding that might create a block */
+}
+
+/* Style for the 'Create Account' link */
+.para a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.para a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .login-modal {
+    padding: 20px;
+  }
+
+  .heading p {
+    font-size: 1.5rem;
   }
 }
