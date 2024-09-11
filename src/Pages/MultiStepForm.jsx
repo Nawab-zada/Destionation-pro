@@ -102,10 +102,13 @@ function MultiStepForm() {
 
   return (
     <div className="app-container">
+      
+   
       <div className="heading-container">
         <h2>Customize Umrah Package</h2>
         <p>Choose your preferences to create a personalized Umrah experience</p>
       </div>
+      <div className="about-umrah-package">
       <main>
         {step === 4 ? (
           <div className="final-confirmation-container">
@@ -124,7 +127,9 @@ function MultiStepForm() {
                         </aside>
           </div>
         )}
+
       </main>
+      </div>
     </div>
   );
 }

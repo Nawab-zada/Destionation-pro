@@ -1,4 +1,4 @@
-.umrah-package-page.body {
+body {
   background-color: #f7fafc;
   font-family: Arial, sans-serif;
   color: #4a5568;
@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-.umrah-package-page.app-container {
+.app-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -49,9 +49,42 @@ header {
   font-size: 18px;
 }
 
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
 
+nav ul li {
+  margin-right: 16px;
+}
 
-.umrah-package-page.content-container {
+nav ul li a {
+  text-decoration: none;
+  color: #4a5568;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+nav ul li a.bg-teal {
+  background-color: #319795;
+  color: #ffffff;
+}
+
+nav ul li a:hover {
+  color: #319795;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px;
+}
+
+.content-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -79,7 +112,7 @@ header {
   color: #319795;
 }
 
-.umrah-package-page.form-section  {
+.form-section {
   width: 30%;
   background-color: #ffffff;
   padding: 24px;
@@ -87,13 +120,13 @@ header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.umrah-package-page.form .form-group {
+form .form-group {
   
   align-items: center;
   margin-bottom: 1rem;
 }
 
-.umrah-package-page.form label {
+form label {
   display: block;
   color: #4a5568;
   margin-bottom: 13px;
@@ -101,8 +134,8 @@ header {
   margin-right: 0.5rem;
 }
 
-.umrah-package-page.form input,
-.umrah-package-page.form select {
+form input,
+form select {
   width: 90%;
   padding: 8px;
   border: 1px solid #cbd5e0;
@@ -112,7 +145,7 @@ header {
   margin-top: 4px;
 }
 
-.umrah-package-page.form button {
+form button {
   width: 40%;
   background-color: #319795;
   color: #ffffff;
@@ -143,7 +176,7 @@ form button:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* footer {
+footer {
   background-color: #234e52;
   color: #ffffff;
   padding: 1%;
@@ -178,7 +211,7 @@ footer .social-icons img {
 
 footer .social-icons a:hover {
   text-decoration: underline;
-} */
+}
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -336,12 +369,11 @@ footer .social-icons a:hover {
   border-radius: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 600px;
-  
   text-align: left;
 }
 
 .about-umrah-package h2 {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   color: #234e52;
   margin-bottom: 16px;
@@ -349,10 +381,9 @@ footer .social-icons a:hover {
 
 .about-umrah-package p {
   color: #4a5568;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.6;
   margin-bottom: 16px;
-  justify-content: space-around;
 }
 
 .umrah-benefits-list {
