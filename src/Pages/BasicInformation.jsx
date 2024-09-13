@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function BasicInformation({ nextStep, handleChange, formData }) {
   return (
@@ -11,7 +11,7 @@ function BasicInformation({ nextStep, handleChange, formData }) {
             id="departure-date"
             required
             value={formData.departureDate}
-            onChange={handleChange('departureDate')}
+            onChange={handleChange("departureDate")}
           />
         </div>
         <div className="form-group">
@@ -19,7 +19,7 @@ function BasicInformation({ nextStep, handleChange, formData }) {
           <select
             id="fly-from"
             value={formData.flyFrom}
-            onChange={handleChange('flyFrom')}
+            onChange={handleChange("flyFrom")}
           >
             <option value="">Select your city</option>
             <option value="Islamabad">Islamabad</option>
@@ -32,7 +32,7 @@ function BasicInformation({ nextStep, handleChange, formData }) {
           <select
             id="package-type"
             value={formData.packageType}
-            onChange={handleChange('packageType')}
+            onChange={handleChange("packageType")}
           >
             <option value="">Select package type</option>
             <option value="Economy">Economy</option>
@@ -48,7 +48,7 @@ function BasicInformation({ nextStep, handleChange, formData }) {
             placeholder="Enter number of passengers"
             required
             value={formData.passengers}
-            onChange={handleChange('passengers')}
+            onChange={handleChange("passengers")}
           />
         </div>
         <div className="form-group">

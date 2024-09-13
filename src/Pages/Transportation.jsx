@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Transportation({ nextStep, prevStep, formData, setFormData }) {
   const [confirmPopup, setConfirmPopup] = useState(false);
@@ -32,8 +32,12 @@ function Transportation({ nextStep, prevStep, formData, setFormData }) {
           >
             <option value="">Select</option>
             <option value="Shared Bus">🚍 Shared Bus (Low Cost)</option>
-            <option value="Private Vehicle">🚗 Private Vehicle (High Cost)</option>
-            <option value="Semi-Private Bus">🚐 Semi-Private Bus (Medium Cost)</option>
+            <option value="Private Vehicle">
+              🚗 Private Vehicle (High Cost)
+            </option>
+            <option value="Semi-Private Bus">
+              🚐 Semi-Private Bus (Medium Cost)
+            </option>
           </select>
         </div>
 
@@ -78,15 +82,14 @@ function Transportation({ nextStep, prevStep, formData, setFormData }) {
       </form>
 
       {confirmPopup && (
-  <div className="popup-overlay">
-    <div className="confirm-popup">
-      <p>Are you sure to confirm?</p>
-      <button onClick={confirm}>Yes</button>
-      <button onClick={() => setConfirmPopup(false)}>Cancel</button>
-    </div>
-  </div>
-)}
-
+        <div className="popup-overlay">
+          <div className="confirm-popup">
+            <p>Are you sure to confirm?</p>
+            <button onClick={confirm}>Yes</button>
+            <button onClick={() => setConfirmPopup(false)}>Cancel</button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
