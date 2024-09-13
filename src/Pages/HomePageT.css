@@ -159,36 +159,6 @@ body {
   font-weight: 400;
 }
 
-.firstSection-checkBox,
-.secondSection-checkBox {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  color: white;
-  margin-top: 2%;
-}
-
-.firstSection-checkBox input[type="checkbox"],
-.secondSection-checkBox input[type="checkbox"] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border: 2px solid #cfe0d0;
-  border-radius: 2px;
-  cursor: pointer;
-  margin-left: 5%;
-  height: 18px;
-  width: 18px;
-  background-color: #213638;
-}
-
-.firstSection-checkBox p,
-.secondSection-checkBox p {
-  margin-left: 5px;
-  font-size: 13px;
-  font-weight: 500;
-}
-
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
@@ -256,6 +226,11 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.swiper-slide:hover img {
+  transform: scale(1.1); /* Slight zoom effect on hover */
 }
 @media (max-width: 550px) {
   /* General Styles */

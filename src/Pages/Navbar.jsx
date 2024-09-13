@@ -18,9 +18,9 @@ const Navbar = () => {
         <div className="manu-button">
         <Link to="/home"><button >Home</button></Link>
         <Link ><button>Airline</button></Link>
-         <Link to=""><button>About Us</button></Link>
+         <Link to="/aboutus"><button>About Us</button></Link>
          <Link to="/services" ><button>Services</button></Link>
-         <Link to="/umrah" ><button>Umrah Packages</button></Link>
+         <Link to="/umrah" ><button>Umrah </button></Link>
         <Link to="/contact"><button>Contact Us</button></Link>
         </div>
     </div>

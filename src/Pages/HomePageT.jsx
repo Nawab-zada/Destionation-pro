@@ -190,12 +190,11 @@
 
 // export default HomePage;
 import React, { useRef, useState } from "react"; 
-import { Link } from "react-router-dom";
-import emailjs from "@emailjs/browser";
-import image1 from "../assets/TRAVAL_IMAGE2.jpeg";
-import image2 from "../assets/TRAVAL_IMAGE4.jpg";
-import image3 from "../assets/TRAVAL_IMAGE3.jpg";
-import image4 from "../assets/TRAVAL_IMAGE1.jpg";
+
+import image1 from "../assets/experience1.png";
+import image2 from "../assets/experience2.png";
+import image3 from "../assets/experience3.png";
+import image4 from "../assets/experience4.png";
 import whatsapp from '../assets/whatsapp-img.jpeg'; 
 import axios from "axios";
 import "./HomePageT.css";
@@ -324,12 +323,7 @@ const HomePage = () => {
           </div>
           <button type="submit">Send Query</button>
         </form>
-        <div className="firstSection-checkBox">
-          <input type="checkbox" />
-          <p>Show direct flight only.</p>
-          <input type="checkbox" />
-          <p>Add Nearby Airports</p>
-        </div>
+       
       </div>
 
       <div className="whatsapp-button">
@@ -343,7 +337,7 @@ const HomePage = () => {
       </div>
 
       <div className="ExperienceSection">
-        <div className="experienceTag">Experience</div>
+        <div className="experienceTag">Experiences</div>
         <Swiper
           slidesPerView={4}
           spaceBetween={30}
