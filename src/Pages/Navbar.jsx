@@ -17,7 +17,7 @@ const Navbar = () => {
         </div>
         <div className="manu-button">
         <Link to="/home"><button >Home</button></Link>
-        <Link ><button>Airline</button></Link>
+        <Link to="/flights"><button>Airline</button></Link>
          <Link to="/aboutus"><button>About Us</button></Link>
          <Link to="/services" ><button>Services</button></Link>
          <Link to="/umrah" ><button>Umrah </button></Link>

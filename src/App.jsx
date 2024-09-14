@@ -13,6 +13,7 @@ import Navbar from './Pages/Navbar';
 import UmrahService from './Pages/UmrahServicePage';
 import MultiStepForm from './Pages/MultiStepForm';
 import AboutUs from './Pages/AboutUs';
+import AllFlight from './Pages/AllFlights';
 function App() {
   const [count, setCount] = useState(0);
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/experiences" element={<Experiences />} />
         <Route path="/services/form" element={<MultiStepForm />} />
         <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/flights" element={<AllFlight />} />
       </Routes>
       <Footer />
     </BrowserRouter>
