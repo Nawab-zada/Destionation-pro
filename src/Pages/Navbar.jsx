@@ -10,10 +10,7 @@ const Navbar = () => {
           <div className="handingSection">
             <p>Destination Travel & Tours</p>
           </div>
-          <div className="buttonSection">
-           <Link to="/Login"> <button>Login</button></Link>
-          <Link to="/signup"><button>Register</button></Link>
-          </div>
+         
         </div>
         <div className="manu-button">
         <Link to="/home"><button >Home</button></Link>

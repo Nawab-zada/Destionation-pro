@@ -48,7 +48,7 @@ const ContactForm = () => {
     
     console.log(formData)
     return (
-        <div className='max-w-[55rem] text-center'>
+        <div className='max-w-[45rem] max-h-[40rem] text-center'>
             <div className='text-center py-5'>
                 <h1 className='capitalize text-2xl'>Know more about travel air international</h1>
             </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import FlightList from './FlightList';
 import axios from "axios";
-
+import './Flights.css';
 const FlightSearchPage = () => {
   const [flights, setFlights] = useState([]);
 
@@ -19,8 +19,9 @@ const FlightSearchPage = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Flight Search Results</h1>
+    <div className="flight-search-page">
+    <h1 className="page-heading">Airline Packages Available</h1>
+    <p className="sub-heading">Contact us for exclusive deals and personalized travel plans!</p>
       <FlightList flights={flights} />
     </div>
   );

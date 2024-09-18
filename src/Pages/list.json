@@ -1,38 +1,30 @@
 [
     {
-        "image": "../assets/Ticketingforallmajorairline.jpeg",
-        "handing": "Ticketing for all major Airline"
+      "handing": "Ticketing for all major Airline"
     },
     {
-        "image": "assets/Airline Resersation.jpeg",
-        "handing": "Airline Reservation"
+      "handing": "Airline Reservation"
     },
     {
-        "image": "assets/Hotal Reservation.jpeg",
-        "handing": "Hotel Reservation"
+      "handing": "Hotel Reservation"
     },
     {
-        "image": "assets/Tourism and Car Rentals.jpeg",
-        "handing": "Tourism and Car Rentals"
+      "handing": "Tourism and Car Rentals"
     },
     {
-        "image": "assets/Visa assistance.jpeg",
-        "handing": "Visa Assistance"
+      "handing": "Visa Assistance"
     },
     {
-        "image": "assets/Travel insurance.jpeg",
-        "handing": "Travel Insurance"
+      "handing": "Travel Insurance"
     },
     {
-        "image": "assets/Ticket delivery.jpeg",
-        "handing": "Ticket Delivery at Doorstep"
+      "handing": "Ticket Delivery at Doorstep"
     },
     {
-        "image": "assets/24_hoursservices.jpeg",
-        "handing": "24 Hours Services"
+      "handing": "24 Hours Services"
     },
     {
-        "image": "assets/VIsa card.jpeg",
-        "handing": "Visa Card"
+      "handing": "Visa Card"
     }
-]
+  ]
+  

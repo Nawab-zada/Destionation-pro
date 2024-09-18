@@ -8,12 +8,13 @@ import Experiences from './Pages/Experiences';
 import ServicesPage from './Pages/ServicesPage';
 import HomePageT from './Pages/HomePageT';
 import LoginPage from './Pages/LoginPage';
-import SignUp from './Pages/SignUp';
+// import SignUp from './Pages/SignUp';
 import Navbar from './Pages/Navbar';
 import UmrahService from './Pages/UmrahServicePage';
 import MultiStepForm from './Pages/MultiStepForm';
 import AboutUs from './Pages/AboutUs';
 import AllFlight from './Pages/AllFlights';
+import WhatsAppButton from './Pages/whatsapp.component';
 function App() {
   const [count, setCount] = useState(0);
 
@@ -23,7 +24,7 @@ function App() {
       <Routes>
       <Route path="/Login" element={<LoginPage />} />
       <Route path="/" element={<HomePageT />} />
-        <Route path="/signup" element={<SignUp />} />
+        {/* <Route path="/signup" element={<SignUp />} /> */}
         <Route path="/home" element={<HomePageT />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contact" element={<ContactUs />} />
@@ -34,6 +35,7 @@ function App() {
         <Route path="/flights" element={<AllFlight />} />
       </Routes>
       <Footer />
+      <WhatsAppButton />
     </BrowserRouter>
   );
 }

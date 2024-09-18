@@ -53,44 +53,36 @@
 import React from 'react';
 import './AboutUs.css';
 import aboutusimage from '../assets/aboutus.png';
+
 const AboutUs = () => {
   return (
     <section className="about-us">
       <div className="container">
         <div className="content-section">
           <div className="title">
-            <h1>About Us</h1>
-            <p>Your Gateway to Unforgettable Journeys</p>
+            <h1 className="page-heading">About Us</h1>
+            <p>Discover Your Next Adventure with Us</p>
           </div>
           <div className="content">
             <h2>Who We Are</h2>
             <p>
-              Welcome to Wanderlust Travel Agency! We are dedicated to crafting
-              personalized travel experiences that ignite your passion for
-              adventure. Whether you're looking for a serene beach escape, a
-              cultural exploration, or an exhilarating outdoor adventure, our
-              team of travel experts is here to guide you every step of the way.
+              Welcome to Destinations Travel and Tours! Based in Pakistan, we offer tailored travel experiences, including custom Umrah packages, hotel bookings, and flight queries. Whether you're planning a spiritual journey or a leisure trip, our expert team is here to assist you every step of the way.
             </p>
 
             <h2>Our Mission</h2>
             <p>
-              At Wanderlust Travel Agency, we strive to make travel seamless,
-              accessible, and unforgettable. Our mission is to connect you with
-              the world through unique and personalized travel plans, ensuring
-              that every journey is a memory you’ll cherish for a lifetime.
+              Our mission is to make your travel experience smooth and memorable. We provide personalized Umrah packages, help with hotel reservations, and manage flight queries to ensure your journey is seamless.
             </p>
 
             <h2>Why Choose Us?</h2>
             <ul>
-              <li>Custom-tailored travel itineraries</li>
-              <li>24/7 customer support</li>
-              <li>Exclusive deals and partnerships</li>
-              <li>Expert advice from seasoned travelers</li>
+              <li>Custom Umrah packages</li>
+              <li>Hotel booking assistance</li>
+              <li>Flight query support</li>
+              <li>24/7 customer service</li>
             </ul>
           </div>
-          <div className="btn-section">
-            <a href="/contact" className="btn">Contact Us</a>
-          </div>
+        
         </div>
         <div className="image-section">
           <img src={aboutusimage} alt="Travel" />
@@ -101,6 +93,7 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+
 
 
 // import React from 'react';

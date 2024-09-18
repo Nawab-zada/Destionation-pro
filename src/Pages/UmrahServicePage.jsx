@@ -15,7 +15,7 @@ function Services() {
   return (
     <div className="services-container">
       <div className="heading-container">
-        <h2>Our Services</h2>
+        <h1 className="page-heading">Our Services</h1>
         <p>Explore our exclusive Umrah services and packages tailored just for you.</p>
       </div>
 

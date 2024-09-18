@@ -267,20 +267,70 @@ const HomePage = () => {
             <label htmlFor="from">From</label>
             <select onChange={handleChange} value={flightData.fromLoca} name="fromLoca">
               <option value="">Country, City, Airport</option>
-              <option value="new_york">New York</option>
-              <option value="london">London</option>
-              <option value="paris">Paris</option>
-              <option value="tokyo">Tokyo</option>
+              <option value="gilgit">Gilgit Airport</option>
+            <option value="islamabad">Islamabad Airport</option>
+            <option value="karachi">Karachi Airport</option>
+            <option value="lahore">Lahore Airport</option>
+            <option value="faisalabad">Faisalabad Airport</option>
+            <option value="multan">Multan Airport</option>
+            <option value="peshawar">Peshawar Airport</option>
+            <option value="sialkot">Sialkot Airport</option>
+            <option value="quetta">Quetta Airport</option>
+            <option value="bahawalpur">Bahawalpur Airport</option>
+            <option value="chitral">Chitral Airport</option>
+            <option value="dalbandin">Dalbandin Airport</option>
+            <option value="dera-ghazi-khan">Dera Ghazi Khan Airport</option>
+            <option value="dera-ismail-khan">Dera Ismail Khan Airport</option>
+            <option value="gwadar">Gwādar Airport</option>
+            <option value="hyderabad">Hyderabad Airport</option>
+            <option value="kadanwari">Kadanwari Airport</option>
+            <option value="skardu">Skardu Airport</option>
+            <option value="mohenjodaro">Mohenjodaro Airport</option>
+            <option value="panjgur">Panjgur Airport</option>
+            <option value="zhob">Zhob Airport</option>
+            <option value="rahim-yar-khan">Rahim Yar Khan Airport</option>
+            <option value="sawan">Sawan Airport</option>
+            <option value="sukkur">Sukkur Airport</option>
+            <option value="turbat">Turbat Airport</option>
+            <option value="nawabshah">Nawabshah Airport</option>
+            <option value="dadu">Dadu Airport</option>
+            <option value="saidu-sharif">Saidu Sharif Airport</option>
+            <option value="kalat">Kalat Airport</option>
             </select>
           </div>
           <div className="formSection">
             <label htmlFor="to">To</label>
             <select onChange={handleChange} value={flightData.toLoca} name="toLoca">
               <option value="">Country, City, Airport</option>
-              <option value="new_york">New York</option>
-              <option value="london">London</option>
-              <option value="paris">Paris</option>
-              <option value="tokyo">Tokyo</option>
+              <option value="gilgit">Gilgit Airport</option>
+            <option value="islamabad">Islamabad Airport</option>
+            <option value="karachi">Karachi Airport</option>
+            <option value="lahore">Lahore Airport</option>
+            <option value="faisalabad">Faisalabad Airport</option>
+            <option value="multan">Multan Airport</option>
+            <option value="peshawar">Peshawar Airport</option>
+            <option value="sialkot">Sialkot Airport</option>
+            <option value="quetta">Quetta Airport</option>
+            <option value="bahawalpur">Bahawalpur Airport</option>
+            <option value="chitral">Chitral Airport</option>
+            <option value="dalbandin">Dalbandin Airport</option>
+            <option value="dera-ghazi-khan">Dera Ghazi Khan Airport</option>
+            <option value="dera-ismail-khan">Dera Ismail Khan Airport</option>
+            <option value="gwadar">Gwādar Airport</option>
+            <option value="hyderabad">Hyderabad Airport</option>
+            <option value="kadanwari">Kadanwari Airport</option>
+            <option value="skardu">Skardu Airport</option>
+            <option value="mohenjodaro">Mohenjodaro Airport</option>
+            <option value="panjgur">Panjgur Airport</option>
+            <option value="zhob">Zhob Airport</option>
+            <option value="rahim-yar-khan">Rahim Yar Khan Airport</option>
+            <option value="sawan">Sawan Airport</option>
+            <option value="sukkur">Sukkur Airport</option>
+            <option value="turbat">Turbat Airport</option>
+            <option value="nawabshah">Nawabshah Airport</option>
+            <option value="dadu">Dadu Airport</option>
+            <option value="saidu-sharif">Saidu Sharif Airport</option>
+            <option value="kalat">Kalat Airport</option>
             </select>
           </div>
           <div className="formSection">
@@ -326,15 +376,6 @@ const HomePage = () => {
        
       </div>
 
-      <div className="whatsapp-button">
-        <a
-          href="https://wa.me/923456301298"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={whatsapp} alt="WhatsApp" />
-        </a>
-      </div>
 
       <div className="ExperienceSection">
         <div className="experienceTag">Experiences</div>

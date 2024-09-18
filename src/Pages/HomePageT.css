@@ -268,12 +268,21 @@ body {
     width: 100%;
   }
 
-  .buttonSection button {
-    width: 100%;
-    font-size: 1rem;
-    padding: 10px 20px;
-    margin: 5px 0;
-  }
+/* New CSS class for Send Query button */
+.send-query-button {
+  background: #026ce8;
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.send-query-button:hover {
+  background: #024a8c; /* Slightly darker shade for hover effect */
+}
 
   /* Manu-button Section */
   .manu-button {

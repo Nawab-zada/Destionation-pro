@@ -57,3 +57,9 @@
     align-items: center;
   
   }
+  .page-heading {
+    font-size: 2.5rem; /* Larger font size for the main heading */
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+  }

@@ -8,7 +8,7 @@ const ContactUs = () => {
             
             <div className='flex justify-center flex-wrap gap-20 px-10'>
                 <div className='flex items-center'>
-                    <img src={Banner} alt="" className='w-[30rem] h-[25rem]' />
+                    <img src={Banner} alt="" className='w-[25rem] h-[20rem]' />
                 </div>
                 <div className='md:flex-grow'>
                     <ContactForm />
